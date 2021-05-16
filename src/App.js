@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import config from "./config/config"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{marginTop: "200px", fontSize: "24px"}}>
+        该项目为自动部署的demo项目,当前打包环境{config.currentEnvironment()}
+      </div>
     </div>
   );
 }
