@@ -19,3 +19,5 @@ yarn install
 yarn add -D cross-env
 ```
 
+docker run -d -p 8000:80 -p 222:22 --name gitlab --restart always -v /home/gitlab/config:/etc/gitlab -v /home/gitlab/logs:/var/log/gitlab -v /home/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce
+
